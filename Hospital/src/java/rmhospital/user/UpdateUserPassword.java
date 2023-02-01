@@ -1,22 +1,20 @@
 package rmhospital.user;
 
-import java.io.IOException;
-import java.sql.Connection;
+import rmhospital.connection.ConnectionProvider;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import rmhospital.connection.ConnectionProvider;
-import java.sql.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.Statement;
 
 /**
  * Servlet implementation class UpdateUserPassword
  */
-@WebServlet("/UpdateUserPassword")
+//@WebServlet("/UpdateUserPassword")
 public class UpdateUserPassword extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

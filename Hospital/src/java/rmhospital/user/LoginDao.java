@@ -1,17 +1,17 @@
 package rmhospital.user;
 
-import java.io.IOException;
-import java.sql.SQLException;
+import javax.servlet.annotation.WebServlet;
+import rmhospital.connection.ConnectionProvider;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import rmhospital.connection.ConnectionProvider;
-import java.sql.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  * Servlet implementation class LoginDao
